@@ -10,7 +10,7 @@ public class Potencia {
      * @return
      */
     public static Integer resolver(Integer base, Integer potencia) {
-        // TODO: implementar
-        return null;
+        int resultado = (int) Math.pow(base, potencia);
+        return resultado;
     }
 }
