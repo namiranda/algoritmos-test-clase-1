@@ -1,5 +1,7 @@
 package com.redbee.academy.clase1;
 
+import java.util.stream.IntStream;
+
 public class CamelCase {
 
 
@@ -18,7 +20,7 @@ public class CamelCase {
      * @return
      */
     public static Integer resolver(String texto) {
-        //TODO: implementar
-        return null;
+
+       return (int) texto.chars().filter(c -> Character.isUpperCase(c)).count() + 1;
     }
 }

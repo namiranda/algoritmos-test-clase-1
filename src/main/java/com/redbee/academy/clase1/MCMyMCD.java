@@ -11,8 +11,7 @@ public class MCMyMCD {
      * @return
      */
     public static Integer mcm(int num1, int num2) {
-        // TODO: implementar
-        return null;
+        return num1 / mcd(num1, num2) * num2;
     }
 
     /**
@@ -23,7 +22,12 @@ public class MCMyMCD {
      * @return
      */
     public static Integer mcd(int num1, int num2) {
-        // TODO: implementar
-        return null;
+        int mcd = 1;
+      for(int i = 1; i <= num1 && i <= num2; i++){
+          if(num1 % i == 0 && num2 % i == 0){
+              mcd = i;
+          }
+      }
+      return mcd;
     }
 }
